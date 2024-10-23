@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Online Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+            color: #333;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #0077b6;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #005f8c;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        .product button {
+            background: #0077b6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .product button:hover {
+            background: #005f8c;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            color: #666;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .category {
+            margin: 15px;
+            padding: 10px;
+            border: 2px dashed #0077b6;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonials {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .testimonial {
+            margin: 10px 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stylish Online Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Categories</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Trendy Jacket</h3>
+                    <p>$89.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Classic T-Shirt</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Stylish Sneakers</h3>
+                    <p>$69.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 4">
+                    <h3>Elegant Dress</h3>
+                    <p>$49.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Categories</h2>
+            <div class="categories">
+                <div class="category">Men's Fashion</div>
+                <div class="category">Women's Fashion</div>
+                <div class="category">Accessories</div>
+                <div class="category">Footwear</div>
+                <div class="category">Sale</div>
+            </div>
+        </div>
+
+        <div class="section testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">"Absolutely love my new jacket! The fit is perfect!"</div>
+            <div class="testimonial">"Great quality products and fast shipping!"</div>
+            <div class="testimonial">"I found the perfect dress for my event. Highly recommend!"</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stylish Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
